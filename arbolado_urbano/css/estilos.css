@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d1d7db;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #00a884;
+  color: antiquewhite;
+}
+
+/* Centra el contenedor horizontal y verticalmente */
+.api-container {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+footer {
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.navheader {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.form-register {
+  width: 400px;
+  background: #c3d9ef;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: rgb(0, 0, 0);
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #4875d7;
+  font-family: "calibri";
+  font-size: 18px;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.form-register a {
+  color: black;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.form-register botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16 px 0;
+  font-size: 16px;
+}
+
+.container_registro {
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: aliceblue; /* Color de letra negro */
+    border: 2px solid #000; /* Recuadro con borde de 2px de ancho y color negro */
+    padding: 20px; /* Espacio alrededor del contenido para separarlo del recuadro */
+}
+
+
+.form-contact {
+  background-color: #fff;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 7px 13px 37px rgb(0, 0, 0, 0.8);
+}
+
+.form-contact h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact {
+  padding: 0.8rem;
+  overflow: hidden;
+  color: rgb(5, 4, 4);
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.contact label {
+  font-weight: 700;
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 2px solid rgb(103, 147, 90);
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
+.cotact textarea {
+  min-height: 100px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background-color: rgb(144, 241, 144);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: white; */
+  border-radius: 15px;
+  /* margin: 10px; */
+}
+
+.container2 .div1 h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100vh;
+  height: 20vh;
+  font-size: x-large;
+  color: black;
+  border-radius: 10px;
+  border-color: black;
+  border-width: medium;
+  border: none;
+  margin: 5px;
+}
+
+.container2 .div2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: justify;
+  font-size:medium;
+  width: 450px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#grupo:hover {
+  color: aqua;
+  font-size: 30px;
+}
+
+.rojo {
+  color: red;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.img {
+  max-width: 500px;
+}
+
+.ncient {
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+/* Estilos para el contenedor del video */
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el video embebido */
+.video-container iframe {
+    width: 560px; /* Ancho deseado */
+    height: 315px; /* Alto deseado */
+    border: 2px solid #000; /* Borde negro de 2px */
+    display: block; /* Para centrar el video horizontalmente */
+    margin: 0 auto; /* Para centrar el video horizontalmente */
+}
+
+
+/* Media query para tabletas y pantallas más pequeñas */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        /* Ajusta otros estilos para tabletas aquí */
+    }
+
+    /* Ajustes específicos para tabletas */
+    .form-register {
+        width: 80%; /* Porcentaje del ancho para adaptarse a tablets */
+    }
+
+    /* Puedes agregar más ajustes para tabletas si es necesario */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        /* Ajusta otros estilos para dispositivos móviles aquí */
+    }
+
+    /* Ajustes específicos para dispositivos móviles */
+    .form-register {
+        width: 100%; /* Ajusta al ancho completo de la pantalla */
+    }
+
+    /* Puedes agregar más ajustes para dispositivos móviles si es necesario */
+}

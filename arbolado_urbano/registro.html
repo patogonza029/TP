@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro de usuarios</title>
+    <script src="./js/validar.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Registro</h2>
+        <nav></nav>
+<div class="container_registro">
+    <h2>Únete a Nuestra Causa</h2>
+    <div>
+        Si compartes nuestra pasión por el arbolado urbano y deseas marcar la diferencia, te invitamos a unirte a nosotros. Ya sea como voluntario, donante o simplemente compartiendo nuestra visión, cada pequeño esfuerzo cuenta.
+        AU está comprometida a seguir creando ciudades más verdes y saludables para las generaciones futuras. Agradecemos tu interés y apoyo en esta causa vital.
+        Juntos, podemos hacer que nuestras ciudades sean más sostenibles, saludables y hermosas gracias al arbolado urbano.
+    </div>
+</div>
+
+    </header>
+    <main>
+
+       
+        <form onsubmit="return validar();">
+            <section class="form-register">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="usuario" id="usuario" value="" placeholder="Ingrese su nombre" /><br>
+                <div id="validar_usuario" style="color: red;">&nbsp;    </div>
+                <input class="controls" type="text" name="clave" id="clave" value="" placeholder="Ingrese su contraseña" /><br>
+                <div id="validar_clave" style="color: red;">&nbsp;    </div>
+
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+
+                <input class="botons" type="submit" value="Enviar"></td>
+
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+            
+            </section>
+        </form>
+        
+
+    </main>
+    
+
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

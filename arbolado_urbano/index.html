@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Arbolado Urbano</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Arbolado Urbano - AU</h2>
+      <nav></nav>
+
+    </header>
+
+    <div class="api-container" id="app">
+      <table border="2">
+        <tr>
+          <th>Nombre</th>
+          <th>Ciclo</th>
+          <th>Riego</th>
+          <th>Sol</th>
+          <th>Imagen</th>
+        </tr>
+        <tr v-for="elemento in datos">
+          <td>{{elemento.common_name}}</td>
+          <td>{{elemento.cycle}}</td>
+          <td>{{elemento.watering}}</td>
+          <td>{{elemento.sunlight}}</td>
+          <td>
+            <img
+              v-if="elemento.default_image && elemento.default_image.thumbnail"
+              v-bind:src="elemento.default_image.thumbnail"
+              alt="elemento.common_name"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
